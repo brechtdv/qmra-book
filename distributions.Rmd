@@ -56,10 +56,23 @@ ggdist(f, seq(1, 6, 0.001), "probability",
 fun("sample")
 ```
 
+### Binomial
+### Poisson
+### Negative Binomial
 
 ## Continuous probability distributions {#dist-continuous}
+
+### Uniform
+
+### Triangular
 
 ```{r, echo=FALSE, fig.height=3}
 ggdist(mc2d::dtriang, seq(0, 20, 0.001), "density",
        min = c(0,5,0), mode = c(5,10,5), max = c(10,15,20), "Triangular")
 ```
+
+### Beta-PERT
+### Beta
+### Log-Normal
+### Gamma
+### Normal
