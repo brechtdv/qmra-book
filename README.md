@@ -14,7 +14,7 @@ The current workflow is as follows:
   2. Compile to html
   3. Synchronize GitHub
 
-The architecture consists of four components.
+The architecture consists of five components.
 
 #### index.php
 
@@ -31,3 +31,7 @@ Hosts `.rmd` files and compiled `.html` files.
 #### Rmarkdown output
 
 Adapted output function, `bd::html_body`. Available via `bd` package. Only body, but with code highlighting. Removes `div`.
+
+#### preamble.R
+
+Settings for `knitr` used in all `.rmd` files. Avoids the need to edit all `.rmd` files if I change my mind.
