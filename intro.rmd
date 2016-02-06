@@ -1,5 +1,4 @@
 ---
-layout: default
 output: bd::html_body
 ---
 
