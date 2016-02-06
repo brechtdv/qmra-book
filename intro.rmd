@@ -2,6 +2,10 @@
 output: bd::html_body
 ---
 
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
 # Introduction {#intro}
 
 Some introduction text.
