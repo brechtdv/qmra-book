@@ -1,7 +1,7 @@
 ---
-layout: default
-title: Introduction
-output: bookdown::html_chapter
+output: 
+  html_fragment:
+    self_contained: false
 ---
 
 # Introduction {#intro}
@@ -17,6 +17,5 @@ Some introduction text.
 ```{r}
 hist(rnorm(100))
 ```
-
 
 ## Check if appears in Contents {#intro-check}
