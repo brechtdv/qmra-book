@@ -43,7 +43,7 @@ A discrete Uniform distribution (categorical distribution) assigns an equal prob
 
 #### Probability mass function
 
-$$P(X=k) = 1/n, \textrm{for} k \in S = \{ k_1, k_2, \dots, k_n \}$$
+$$P(X=k) = 1/n, \quad \textrm{for} \; k \in S = \{ k_1, k_2, \dots, k_n \}$$
 
 ```{r, echo=FALSE, fig.height=3}
 f <- function(x, n) ifelse(x%%1 == 0, 1/6, 0)
