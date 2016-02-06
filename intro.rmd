@@ -4,10 +4,19 @@ title: Introduction
 output: bookdown::html_chapter
 ---
 
-# Introduction {#intro-why}
+# Introduction {#intro}
 
 Some introduction text.
 
 ```{r}
 1+2
 ```
+
+## Subsection {#intro-sub1}
+
+```{r}
+hist(rnorm(100))
+```
+
+
+## Check if appears in Contents {#intro-check}
