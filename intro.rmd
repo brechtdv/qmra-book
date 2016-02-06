@@ -17,3 +17,10 @@ hist(rnorm(100))
 ```
 
 ## Check if appears in Contents {#intro-check}
+
+```{r}
+## chunk comment
+mean(c(1, 2, 3), na.rm = TRUE)  # inline comment
+nchar(c("test", "characters"))  
+```
+
