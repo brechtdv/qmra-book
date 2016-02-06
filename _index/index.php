@@ -104,5 +104,10 @@ readfile($readme);
   <script src="www/jquery.toc.js" type="text/javascript"></script>
   <script src="www/nav-affix.js" type="text/javascript"></script>
 
+  <!-- MathJax -->
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
   </body>
 </html>
