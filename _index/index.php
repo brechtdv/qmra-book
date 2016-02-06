@@ -42,7 +42,7 @@ readfile("https://raw.githubusercontent.com/brechtdv/qmra-book/master/_index/nav
         </div>
 
         <h4>Contents</h4>
-          <ul class="list-unstyled" id="toc"></ul>
+          <ul data-toc=".content" data-toc-headings="h2,h3"></ul>
 
           <hr>
           <p><a href="/contribute.html">How to contribute</a></p>
@@ -95,8 +95,9 @@ readfile($readme);
   });
   </script>
 
-  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+  <script src="www/jquery.toc.js" type="text/javascript"></script>
   <script src="www/bootstrap.min.js"></script>
-  <script src="www/toc.js"></script>
+
   </body>
 </html>
