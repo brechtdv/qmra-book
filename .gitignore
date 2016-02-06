@@ -1,5 +1,6 @@
-# RStudio files
+# R files
 .Rproj.user/
+.Rhistory
 
 # Windows image file caches
 Thumbs.db
