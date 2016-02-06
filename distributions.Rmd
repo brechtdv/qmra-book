@@ -1,0 +1,28 @@
+---
+output: bd::html_body
+---
+
+```{r, echo=FALSE, message=FALSE}
+source("preamble.R")
+source("ggdist.R")
+```
+
+# Probability distributions in burden and risk assessment {#dist}
+
+Probability distributions are at the heart of Quantitative Microbial Risk Assessment. \ch{distributions} presented the key characteristics of probability distributions and methods to sample random deviates. This Appendix provides an overview of the most commonly used discrete and continuous distributions. For each distribution, we provide a narrative interpretation, the probability mass/density function, and the \RR implementation.\\
+
+
+## Discrete probability distributions {#dist-discrete}
+
+```{r, echo=FALSE, fig.height=3}
+f <- function(x, n) ifelse(x%%1 == 0, 1/6, 0)
+ggdist(f, seq(1, 6, 0.001), "probability",
+       n = "{1,2,3,4,5,6}", "Uniform")
+```
+
+## Continuous probability distributions {#dist-continuous}
+
+```{r, echo=FALSE, fig.height=3}
+ggdist(mc2d::dtriang, seq(0, 20, 0.001), "density",
+       min = c(0,5,0), mode = c(5,10,5), max = c(10,15,20), "Triangular")
+```
