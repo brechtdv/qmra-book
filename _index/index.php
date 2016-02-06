@@ -24,7 +24,7 @@
             </a>
             <ul class="dropdown-menu pull-right" role="menu">
 <?php
-readfile("https://raw.githubusercontent.com/brechtdv/qmra-book/master/nav.html");
+readfile("https://raw.githubusercontent.com/brechtdv/qmra-book/master/_index/nav.html");
 ?>
             </ul>
           </li>
