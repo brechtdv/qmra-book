@@ -1,6 +1,6 @@
 # R files
 .Rproj.user/
-.Rproj
+*.Rproj
 .Rhistory
 
 # Windows image file caches
