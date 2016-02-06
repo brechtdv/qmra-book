@@ -7,18 +7,55 @@ source("preamble.R")
 source("ggdist.R")
 ```
 
+```{r, echo=FALSE}
+fun_tab <-
+  function(f) {
+    cat(fun(paste0("d", f)))
+    cat(fun(paste0("p", f)))
+    cat(fun(paste0("q", f)))
+    cat(fun(paste0("r", f)))
+  }
+fun <-
+  function(x) {
+    txt <- capture.output(args(x))[1]
+    txt <- gsub("function ", "", txt)
+    cat(paste0(x, txt), "\n")
+  }
+```
+
+
 # Probability distributions in burden and risk assessment {#dist}
 
-Probability distributions are at the heart of Quantitative Microbial Risk Assessment. \ch{distributions} presented the key characteristics of probability distributions and methods to sample random deviates. This Appendix provides an overview of the most commonly used discrete and continuous distributions. For each distribution, we provide a narrative interpretation, the probability mass/density function, and the \RR implementation.\\
+Probability distributions are at the heart of Quantitative Microbial Risk Assessment. \ch{distributions} presented the key characteristics of probability distributions and methods to sample random deviates. This Appendix provides an overview of the most commonly used discrete and continuous distributions. For each distribution, we provide a narrative interpretation, the probability mass/density function, and the R implementation.
 
+A near comprehensive set of distributions is provided in the following monographs:
+
+  * Johnson NL, Kemp AW, Kotz S (2005). _Univariate discrete distributions._ 3^rd^ Edition. John Wiley & Sons.
+  * Johnson NL, Kotz S, Balakrishnan N (1994). _Continuous univariate distributions, vol. 1-2._ 2^nd^ Edition. John Wiley & Sons.
+
+The `stats` package provides density, cumulative, quantile and random number generation functions for the most common distributions. See `?Distributions` for distributions in the `stats` package. Additional distributions are available via specific packages; visit the CRAN task view on distributions (http://cran.r-project.org/web/views/Distributions.html) to find out more.
 
 ## Discrete probability distributions {#dist-discrete}
+
+### Uniform discrete
+
+A discrete Uniform distribution (categorical distribution) assigns an equal probability to each of a discrete set of outcomes. The result of a throw of a dice, for example, follows a discrete Uniform distribution, with each of the six possible outcomes having an equal probability of $1/6$. Resampling with replacement, or non-parametric bootstrap, may be based on a discrete Uniform distribution, when each discrete observation has an equal probability of being resampled.
+
+#### Probability mass function
+
+$$P(X=k) = 1/n, \textrm{when~} k \in S = \{ k_1, k_2, \dots, k_n \}$$
 
 ```{r, echo=FALSE, fig.height=3}
 f <- function(x, n) ifelse(x%%1 == 0, 1/6, 0)
 ggdist(f, seq(1, 6, 0.001), "probability",
        n = "{1,2,3,4,5,6}", "Uniform")
 ```
+
+#### R implementation
+```{r, echo=FALSE}
+fun("sample")
+```
+
 
 ## Continuous probability distributions {#dist-continuous}
 
