@@ -1,3 +1,6 @@
 ### Preamble for Rmarkdown files
 
-knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.align = "center")
