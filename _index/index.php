@@ -40,9 +40,11 @@ readfile("https://raw.githubusercontent.com/brechtdv/qmra-book/master/_index/nav
       <div class="row">
         <div class="col-xs-12 col-sm-3" id="nav">
 
+		<!-- well
         <div class="well">
           Some other information.
         </div>
+		-->
 
         <h4>Contents</h4>
           <ul data-toc="" data-toc-headings="h2,h3"></ul>
