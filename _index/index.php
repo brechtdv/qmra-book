@@ -30,7 +30,10 @@ readfile("https://raw.githubusercontent.com/brechtdv/qmra-book/master/_index/nav
           </li>
         </ul>
 
-        <h3 class="muted"><a href="/">Quantitative Food Safety</a> <small>by Brecht Devleesschauwer</small></h3>
+        <h5 class="muted" style="font-size:24px; margin-top:20px; margin-bottom:10px;">
+			<a href="/">Quantitative Food Safety</a>
+			<small style="font-size:14px;">by Brecht Devleesschauwer</small>
+		</h5>
         <hr>
       </div>
 
@@ -42,7 +45,7 @@ readfile("https://raw.githubusercontent.com/brechtdv/qmra-book/master/_index/nav
         </div>
 
         <h4>Contents</h4>
-          <ul data-toc=".content" data-toc-headings="h2,h3"></ul>
+          <ul data-toc="" data-toc-headings="h2,h3"></ul>
 
           <hr>
           <p><a href="/contribute.html">How to contribute</a></p>
@@ -95,9 +98,11 @@ readfile($readme);
   });
   </script>
 
+  <script src="//code.jquery.com/jquery.js" type="text/javascript"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+  <script src="www/bootstrap.min.js" type="text/javascript"></script>
   <script src="www/jquery.toc.js" type="text/javascript"></script>
-  <script src="www/bootstrap.min.js"></script>
+  <script src="www/nav-affix.js" type="text/javascript"></script>
 
   </body>
 </html>
