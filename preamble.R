@@ -2,5 +2,4 @@
 
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>",
-  fig.align = "center")
+  comment = "#>")

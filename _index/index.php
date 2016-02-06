@@ -10,6 +10,14 @@
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700'
       rel='stylesheet' type='text/css'>
+
+	<style>
+	.MathJax_Display { 
+		text-align: left !important;
+		display: inline !important;
+	}
+	</style>
+
   </head>
 
   <body>
