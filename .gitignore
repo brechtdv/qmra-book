@@ -3,6 +3,9 @@
 *.Rproj
 .Rhistory
 
+# test files
+_test/
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
