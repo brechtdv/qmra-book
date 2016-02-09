@@ -65,7 +65,7 @@ readfile("https://raw.githubusercontent.com/brechtdv/qmra-book/master/_index/nav
 
         <div id="content" class="col-xs-12 col-sm-8 pull-right">
 <?php
-$nav = array("home", "intro", "distributions");
+$nav = array("home", "intro", "distributions", "daly");
 
 if (!empty($_GET["page"])) {
   if (in_array($_GET["page"], $nav)) {
