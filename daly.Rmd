@@ -1,0 +1,15 @@
+---
+output: bd::html_body
+---
+
+```{r, echo=FALSE, message=FALSE}
+source("preamble.R")
+```
+
+## Disability-Adjusted Life Years
+
+### Standard formulas
+
+### Standard life expectancy
+
+<iframe width="700" height="350" frameborder="0" scrolling="no" src="https://plot.ly/~brechtdv/0.embed"></iframe>
